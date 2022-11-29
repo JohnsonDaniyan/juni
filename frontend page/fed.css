@@ -346,3 +346,30 @@ input#submit{
     background-image: url(../portfolio_images/DSC_4379.JPG);
     background-size: contain;
 }
+
+
+
+@media screen and (max-width: 500px){
+    #grey_nav{
+        display: none;
+    }
+
+    .bio{
+        left: -530px;
+        width: 300px;
+    }
+
+    .bio.show{
+        transform: translate(0px);
+    }
+
+    .image{
+        width: 100vw;
+        left: -90px;
+    }
+
+    #intro h2{
+        margin-left: 20px;
+        top: 20px;
+    }
+}
