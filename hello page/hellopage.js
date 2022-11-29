@@ -6,7 +6,7 @@ let selectField = document.getElementById('profession').value;
 
 function chooseField() {
     if (selectField === 'fed') {
-        window.location.href = 'http://127.0.0.1:5500/frontend%20page/fed.html';
+        window.location.href = '../frontend page/fed.html';
         console.log('You chose FED.');
     }
     if (selectField === 'bballer') {

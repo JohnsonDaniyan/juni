@@ -99,7 +99,7 @@ submit.addEventListener('click', validateEmail)
 
 function validation(e) {
     let yourName = document.getElementById('name');
-    if (yourName.value == '' || yourName.value.length < 10) {
+    if (yourName.value == '') {
         yourName.style.border = '2px solid red';
         alert('Please fill in your name!');
         return false;
@@ -110,7 +110,7 @@ function validation(e) {
         return false;
     }
     let message = document.getElementById('message');
-    if (message.value == '' && message.value.length < 10) {
+    if (message.value == '') {
         alert('Please state a valid message.')
         return false;
     }
