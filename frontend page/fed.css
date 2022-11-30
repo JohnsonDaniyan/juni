@@ -17,6 +17,10 @@ body{
     right: 0;
 }
 
+#menubar{
+    display: none;
+}
+
 #intro nav{
     position: absolute;
     right: 0;
@@ -340,18 +344,47 @@ input#submit{
 }
 
 #profilepic{
+    margin-top: 20px;
     margin-left: 80px;
-    height: 400px;
+    height: 300px;
     width: 250px;
-    background-image: url(../portfolio_images/DSC_4379.JPG);
-    background-size: contain;
+    background-image: url(../portfolio_images/WhatsApp\ Image\ 2022-11-30\ at\ 17.33.20.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
 
 
 
 @media screen and (max-width: 500px){
-    #grey_nav{
+    #intro #grey_nav{
+        display: block;
+        background-color: transparent;
+    }
+
+    #menubar{
+        display: block;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        /* z-index: 2; */
+        top: 0px;
+        left: 220px;
+        background-image: url(../portfolio_images/menu.svg);
+        background-size: cover;
+    }
+
+    /* #menubar:hover #intro nav{
+        display: block;
+    } */
+
+    #intro nav{
+        top: 50px;
         display: none;
+        flex-direction: column-reverse;
+        background-color:  rgb(21, 22, 36);
+        height: fit-content;
+        width: fit-content;   
     }
 
     .bio{
@@ -471,5 +504,10 @@ input#submit{
 
     form{
         position: relative;
+        align-items: center;
+    }
+
+    input{
+        width: 300px;
     }
 }

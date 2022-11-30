@@ -126,3 +126,23 @@ function validateEmail(e) {
         return false
     }
 }
+
+let menu = document.getElementById('menubar');
+
+let nav = document.querySelector('nav')
+
+menu.addEventListener('click', dropDown);
+
+function dropDown() {
+        nav.style.display = 'flex';
+}
+
+// menu.addEventListener('click', close)
+
+// function close() {
+//     if (nav.style.display = 'flex') {
+//         nav.style.display = 'none'
+//         return
+//     }
+// }
+
