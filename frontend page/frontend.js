@@ -130,11 +130,13 @@ function validateEmail(e) {
 let menu = document.getElementById('menubar');
 
 let nav = document.querySelector('nav')
+let open  = false;
 
 menu.addEventListener('click', dropDown);
 
 function dropDown() {
-        nav.style.display = 'flex';
+    open?open=false:open=true;
+    open?nav.style.display = 'flex':nav.style.display = 'none'
 }
 
 // menu.addEventListener('click', close)
